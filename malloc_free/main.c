@@ -8,6 +8,15 @@
 
 int main(void)
 {
-    //Call malloc functions and free memory when complete
+    // Call malloc functions and free memory when complete
+    int n = 5;
+    char *string = "Hello";
+
+    new_int_array(3, n);
+    new_string_array(3, string);
+
+    // After showcasing malloc functions, add return statements to functions
+    // and move free statements to main()
+
     return (0);
 }
