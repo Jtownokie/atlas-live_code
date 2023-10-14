@@ -12,8 +12,8 @@ int main(void)
     int n = 5;
     char *string = "Hello";
 
-    new_int_array(3, n);
-    new_string_array(3, string);
+    new_int_array(5, n);
+    new_string_array(5, string);
 
     // After showcasing malloc functions, add return statements to functions
     // and move free statements to main()
