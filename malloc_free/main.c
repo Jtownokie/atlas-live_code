@@ -15,8 +15,5 @@ int main(void)
     new_int_array(5, n);
     new_string_array(5, string);
 
-    // After showcasing malloc functions, add return statements to functions
-    // and move free statements to main()
-
     return (0);
 }
