@@ -21,13 +21,15 @@ typedef struct node_s {
  * Return: Always Void
 */
 void insert_at_front(Node **head, int data) {
-    Node *newNode = malloc(sizeof(Node));
-    if (newNode == NULL) {
+    Node *new_node = NULL;
+
+    new_node = malloc(sizeof(Node));
+    if (new_node == NULL) {
         return;
     }
-    newNode->data = data;
-    newNode->next = *head;
-    *head = newNode;
+    new_node->data = data;
+    new_node->next = *head;
+    *head = new_node;
 }
 
 /**
