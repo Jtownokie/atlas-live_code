@@ -8,10 +8,8 @@
  *
  * Description: singly linked list node structure
  */
-typedef struct node_s {
-    int data;
-    struct node_s* next;
-} Node;
+
+    // Define Node Structure
 
 /**
  * insert_at_front - Function that inserts a node at the beginning of a list
@@ -21,15 +19,7 @@ typedef struct node_s {
  * Return: Always Void
 */
 void insert_at_front(Node **head, int data) {
-    Node *new_node = NULL;
-
-    new_node = malloc(sizeof(Node));
-    if (new_node == NULL) {
-        return;
-    }
-    new_node->data = data;
-    new_node->next = *head;
-    *head = new_node;
+    // Creates New Node at Beginning of List
 }
 
 /**
@@ -39,27 +29,13 @@ void insert_at_front(Node **head, int data) {
 */
 int main(void) {
 
-    Node *head = NULL;
-    Node *current = NULL;
-    Node *node_freer = NULL;
-    int i = 0;
+    // Declare Variables
 
-    insert_at_front(&head, 42);
-    insert_at_front(&head, 22);
-    insert_at_front(&head, 51);
+    // Call insert_at_front
 
-    current = head;
-    while (current != NULL) {
-        i++;
-        printf("Data: [%d] | Node: [%d]\n", current->data, i);
-        current = current->next;
-    }
+    // Print Nodes
 
-    while (head != NULL) {
-        node_freer = head;
-        head = head->next;
-        free(node_freer);
-    }
+    // Free List
 
     return (0);
 }
