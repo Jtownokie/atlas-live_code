@@ -1,0 +1,13 @@
+Music Artists
+
+Table 1 - Artists
+    Fields
+        Artist ID (Primary Key)
+        Name
+        Age
+
+Table 2 - Songs
+    Fields
+        Title
+        Artist ID (Foreign Key)
+

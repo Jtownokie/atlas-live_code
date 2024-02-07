@@ -17,7 +17,7 @@ class Animal:
 
 class Rabbit(Animal):
     def __init__(self, color):
-        super().__init__(color)
+        self.color = color
 
     def hop(self):
         print("The Rabbit is hopping")

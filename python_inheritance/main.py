@@ -6,19 +6,16 @@ if __name__ == "__main__":
     rabbit_obj = Rabbit("Brown")
     fish_obj = Fish("Blue")
     hawk_obj = Hawk("Grey")
-
     # Call Animal Class Methods
+    animal_obj.eat()
     animal_obj.sleep()
-    rabbit_obj.eat()
-    fish_obj.sleep()
-    hawk_obj.eat()
+    print(animal_obj.alive)
+    print(animal_obj.color)
 
-    # Class Names Differ Based On Object Type
+    rabbit_obj.eat()
+    rabbit_obj.hop()
     rabbit_obj.print_color()
+    # Class Names Differ Based On Object Type
     fish_obj.print_color()
     hawk_obj.print_color()
-
     # SubClass Specific Methods
-    rabbit_obj.hop()
-    fish_obj.swim()
-    hawk_obj.fly()
