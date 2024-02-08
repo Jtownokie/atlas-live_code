@@ -1,6 +1,6 @@
 --sudo apt-install pkg-config
 
-ALTER USER 'root'@'localhost' IDENTIFIED BY 'root-password';
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'insert_password';
 FLUSH PRIVILEGES;
 
 CREATE DATABASE livecode;
